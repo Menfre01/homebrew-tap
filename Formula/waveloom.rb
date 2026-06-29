@@ -1,38 +1,29 @@
 # typed: false
 # frozen_string_literal: true
 
-# Homebrew formula for Waveloom
-# This file is the canonical source; release workflow syncs it to homebrew-tap.
-#
-# Installation:
-#   brew install Menfre01/tap/waveloom
-#
-# Or test locally:
-#   brew install --formula .github/homebrew/waveloom.rb
-
 class Waveloom < Formula
   desc "Terminal-based coding agent optimized for DeepSeek prefix caching"
   homepage "https://github.com/Menfre01/waveloom"
-  version "0.1.0-alpha.4"
+  version "0.1.0-alpha.5"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Menfre01/waveloom/releases/download/v#{version}/waveloom_darwin_arm64.tar.gz"
-      sha256 "0c39652670e9878bc0b2e5cc4d845326720d15610fdd62ac98e7c232f30a738a"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.5/waveloom_darwin_arm64.tar.gz"
+      sha256 "1723ac3344517c6df19611a9bd78e28ed042ba1e2d9cc68efed4c5b7db2a6358"
     else
-      url "https://github.com/Menfre01/waveloom/releases/download/v#{version}/waveloom_darwin_amd64.tar.gz"
-      sha256 "e852b0023fd251c1c58219df9d06dbc41cb1bd55aa12c3b4a7be22981e4545e1"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.5/waveloom_darwin_amd64.tar.gz"
+      sha256 "819da50100fb1f8965bca4e4ec8780480f12f7e3d46b365dccdd7ef4fe9f79b1"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Menfre01/waveloom/releases/download/v#{version}/waveloom_linux_arm64.tar.gz"
-      sha256 "c878e12c7b14f773592bc0c87f182e1de1c0eaa15ed8639dbd644f0f3a9a188b"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.5/waveloom_linux_arm64.tar.gz"
+      sha256 "877971013ff7ff5208d8e3dcac51d282c13c6d4eab6f69474696764e3748c728"
     else
-      url "https://github.com/Menfre01/waveloom/releases/download/v#{version}/waveloom_linux_amd64.tar.gz"
-      sha256 "28d045684de1b8b0800e06264ccdb4f9f0e2f746bbd605d726f899797452fe02"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.5/waveloom_linux_amd64.tar.gz"
+      sha256 "9604e034f7b8a421f1238faea9d753952516d2eed959c3b0fdd6e30be51fea82"
     end
   end
 
