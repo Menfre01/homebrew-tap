@@ -10,20 +10,20 @@ class Waveloom < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.14/waveloom_darwin_arm64.tar.gz"
-      sha256 "8e27f725cb0dbb70adb10a958bc02a072749fe5994472e6c69aacbc3867460b6"
+      sha256 "523be5a0b77383fc9bae8af9dc270e0276810748e8e470e305b6ab20f9b177f4"
     else
       url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.14/waveloom_darwin_amd64.tar.gz"
-      sha256 "3d331ca1cda3ff695056f295e635cc016569a9d25ffb2eddc443b5689a8fe25f"
+      sha256 "0a3e11f6dc97e8d824e90e052ffda12dde14270e266f24f4e29fe27444a8cedf"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.14/waveloom_linux_arm64.tar.gz"
-      sha256 "7b99f145c6105e5725e899fac5e6c5006f23cccabf2ec3e8f40bf96a404b6f4c"
+      sha256 "090c81f0c5d170b2df1a8e1317d2e37caeb6b8473404043f9629744531df6173"
     else
       url "https://github.com/Menfre01/waveloom/releases/download/v0.1.0-alpha.14/waveloom_linux_amd64.tar.gz"
-      sha256 "fd06ab47a0929233cfb2e30a5aefbbfb7325b4a090c8f3342142995c353bc964"
+      sha256 "512bd54feffff506e01e5d535b668295af0ad4c137a30f75b192d46f6f09c2c2"
     end
   end
 
