@@ -4,26 +4,26 @@
 class Waveloom < Formula
   desc "Terminal-based coding agent optimized for DeepSeek prefix caching"
   homepage "https://github.com/Menfre01/waveloom"
-  version "0.4.0"
+  version "0.4.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.0/waveloom_darwin_arm64.tar.gz"
-      sha256 "80e63f26a823d1b481efa7e3be4839c3a4de2c47db4bffeaafff5f0b1a496d83"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.1/waveloom_darwin_arm64.tar.gz"
+      sha256 "d9f3fe904306ca839367f3c3145bef32fa7d21fef64c40124858163e71740617"
     else
-      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.0/waveloom_darwin_amd64.tar.gz"
-      sha256 "f264f5a5c883eee1fe24610952dd4f21dd67e8fbcacafe8ee29f0040de8e1b3c"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.1/waveloom_darwin_amd64.tar.gz"
+      sha256 "953ec6a8c5b758034d88af5fe27ebbd41535d45984a88135246aaaa2968fc45c"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.0/waveloom_linux_arm64.tar.gz"
-      sha256 "1b5de5c08932c1dbfdf28ba147e19cfa7ff64ea6bd81fa91585e2c84036e9f80"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.1/waveloom_linux_arm64.tar.gz"
+      sha256 "30ec9784373934e5dc8e378ebc1cc08dcfe2030e554119c029975aa9ef50d9d9"
     else
-      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.0/waveloom_linux_amd64.tar.gz"
-      sha256 "ad52af4053a25c406f604034c67c4f22f2029c79d7e5e6491a630f7d09ba58d1"
+      url "https://github.com/Menfre01/waveloom/releases/download/v0.4.1/waveloom_linux_amd64.tar.gz"
+      sha256 "f3c8bb91b9d90da799e2e9d48015da357d8ac08e3d3f27304f2f0589cf271df0"
     end
   end
 
